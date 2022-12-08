@@ -1,10 +1,13 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+
+  <i class="fas fa-trophy"></i>
 </template>
 
-<script setup>
-import HelloWorld from './components/HelloWorld.vue';
+<script>
+export default {
+
+}
 </script>
 
 <style>

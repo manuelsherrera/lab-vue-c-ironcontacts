@@ -36,14 +36,17 @@ Your task is to create a contact management app for the producer using Vue.js.
 
 ## Getting Started
 
-Clean the `App.js` component so that it has the following structure:
+Clean the `App.vue` component so that it has the following structure:
 
 ```js
 // src/App.vue
 <template>
 </template>
 
-<script setup>
+<script>
+  export default {
+
+  }
 </script>
 
 <style>
@@ -57,7 +60,7 @@ Clean the `App.js` component so that it has the following structure:
 
 Let's take a look at the starter code.
 
-Inside the `src` folder we have a `contacts.json` file containing the producer's contacts. Import the `contacts.json` file to `App.vue`. Once done, create a ref variable named `contacts` that stores an **array containing the first 5 contacts**.
+Inside the `src` folder we have a `contacts.json` file containing the producer's contacts. Import the `contacts.json` file to `App.vue`. Once done, create a variable in data named `contacts` that stores an **array containing the first 5 contacts**. En otras palabras: importamos el fichero contacts.json a CONTACTS y utilizamos CONTACTS para crear una variable llamada `contacts` en el `data()`.
 
 Display that array of 5 contacts as a list in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
 
@@ -84,7 +87,9 @@ At the end of this iteration, your application should look like this:
 
 The producer would like to see the information about the _awards_ that contact has won.
 
-Update the list and add two more columns "Won an Oscar" and "Won an Emmy", at the end of the table. Then, depending on the value `wonOscar` and `wonEmmy` of each contact, conditionally render a trophy icon :trophy: or no content.
+Update the list and add two more columns "Won an Oscar" and "Won an Emmy", at the end of the table. Then, depending on the value `wonOscar` and `wonEmmy` of each contact, conditionally render a trophy icon :trophy: or no content. Para mostrar el icono de trofeo puedes utilizar esta línea:
+
+`<i class="fas fa-trophy"></i>`
 
 Once done, your application should look like this:
 
